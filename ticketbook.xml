@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    android:weightSum="1"
+    android:id="@+id/rgrup2">
+
+    <TextView
+        android:text="BOOK TICKET"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_toRightOf="@+id/textView8" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/spFirst"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:entries="@array/mainSpinner"/>
+
+    <TextView
+        android:text="From Station :"
+        android:textSize="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spFirst"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView8" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spSecond"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/emptyString4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView7"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_marginRight="7dp"
+        android:layout_marginEnd="7dp"
+        android:id="@+id/TVstation"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spThird"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgrup"
+        android:weightSum="1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView10">
+
+
+    <RadioButton
+        android:text="Single"
+        android:onClick="rbclick"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:id="@+id/rsingle"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:text="Return"
+        android:onClick="rbclick"
+
+        android:layout_width="126dp"
+        android:layout_height="24dp"
+        android:id="@+id/rreturn"
+        android:layout_below="@+id/rsingle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgrup02"
+        android:layout_above="@+id/totalprice"
+        android:layout_toRightOf="@+id/textView11"
+        android:layout_toEndOf="@+id/textView11">
+
+
+        <RadioButton
+            android:text="yes"
+            android:onClick="rbclick2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ayes"
+            android:layout_below="@+id/textView13"
+            android:layout_toRightOf="@+id/textView11"
+            android:layout_toEndOf="@+id/textView11" />
+
+        <RadioButton
+            android:text="yes"
+            android:onClick="rbclick2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:id="@+id/cyes"
+            android:layout_below="@+id/textView11"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11" />
+    </RadioGroup>
+
+    <TextView
+        android:text="To Station  :"
+        android:textSize="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/spSecond"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="9dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/totalprice" android:layout_alignBaseline="@+id/TVrs"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_toLeftOf="@+id/textView11"
+        android:layout_toStartOf="@+id/textView11" />
+
+    <TextView
+        android:text="Journey Type :"
+        android:textSize="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/spThird"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/TVrandom"
+        android:textSize="16dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Select Line Type:"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="rs:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:id="@+id/TVrs"
+        android:layout_above="@+id/button"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp" />
+
+    <Button
+        android:text="BOOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bbook"
+        android:onClick="ticketid"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toRightOf="@+id/rgrup"
+        android:layout_toEndOf="@+id/rgrup" />
+
+    <Button
+        android:text="Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="onClick"
+        android:layout_marginBottom="13dp"
+        android:layout_above="@+id/TVrandom"
+        android:layout_toLeftOf="@+id/Bbook"
+        android:layout_toStartOf="@+id/Bbook"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        android:text="View Ticket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BVticket"
+        android:onClick="onClickViewTicket"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_alignTop="@+id/Bbook"
+        android:layout_toRightOf="@+id/Bbook"
+        android:layout_toEndOf="@+id/Bbook" />
+
+    <TextView
+        android:text="Child"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/totalprice"
+        android:layout_toEndOf="@+id/Bbook"
+        android:layout_toRightOf="@+id/Bbook" />
+
+    <TextView
+        android:text="Adult"
+        android:textSize="20dp"
+        android:onClick="rbclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_alignTop="@+id/rgrup02"
+        android:layout_alignRight="@+id/textView12"
+        android:layout_alignEnd="@+id/textView12" />
+
+
+</RelativeLayout>

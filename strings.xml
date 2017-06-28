@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">Local Train</string>
+    <string name="emptString" />
+    <string name="emptyString1" />
+    <string name="emptyString3" />
+    <string name="emptyString4" />
+    <string name="idticket" />
+    <string name="tostation" />
+    <string name="fromstation" />
+    <string name="type" />
+    <string name="rs" />
+    <string name="toStation" />
+    <string name="fromStation" />
+    <string name="frmStation" />
+    <string name="stationfrom" />
+    <string name="single" />
+    <string name="singletype" />
+    <string name="Single" />
+    <string name="price" />
+    <string name="Price" />
+    <string-array name="mainSpinner">
+
+
+
+    <item>central</item>
+        <item>western</item>
+        <item>harbour</item>
+
+    </string-array>
+    <string-array name="central">
+        <item>CST</item>
+        <item>Masjid</item>
+        <item>Sandhurst Road</item>
+        <item>Byculla</item>
+        <item>Chinchpokli</item>
+        <item>Currey Road</item>
+        <item>Parel</item>
+        <item>Dadar</item>
+        <item>Matunga</item>
+        <item>Sion</item>
+        <item>Kurla</item>
+        <item>Vidyavihar</item>
+        <item>Ghatkoper</item>
+        <item>Vikhroli</item>
+        <item>Kanjurmarg</item>
+        <item>Bhandup</item>
+        <item>Nahur</item>
+        <item>Mulund</item>
+        <item>Thane</item>
+        <item>Kalva</item>
+        <item>Mumbra</item>
+        <item>Diva Junction</item>
+        <item>Kopar</item>
+        <item>Dombivali</item>
+        <item>Thakurli</item>
+        <item>Kalyan</item>
+
+
+
+        <item>Ambernath</item>
+        <item>badlapur</item>
+
+        <item>Neral</item>
+        <item>bhivpuri</item>
+        <item>karjat</item>
+
+        <item>khopli</item>
+
+        <item>Titwala</item>
+
+        <item>khadavli</item>
+
+        <item>asangaon</item>
+        <item>kasara</item>
+
+
+
+
+
+
+
+
+        <item>kanjurmarg</item>
+        <item>thane</item>
+        <item>bhandup</item>
+        <item>kanjurmarg</item>
+        <item>thane</item>
+        <item>bhandup</item>
+
+
+    </string-array>
+    <string-array name="western">
+        <item>bandra</item>
+        <item>dadar</item>
+    </string-array>
+    <string-array name="harbour">
+        <item>wadala</item>
+        <item>chembur</item>
+    </string-array>
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4511E">
+
+    <TextView
+        android:text="Welcome,"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:text="@string/emptString"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:id="@+id/TVusername" />
+
+    <Button
+        android:text="ADD BALANCE"
+        android:background="#FFAB00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bbalance"
+        android:onClick="onClickAddBal"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/Bbookticket"
+        android:layout_alignStart="@+id/Bbookticket"
+        android:layout_alignRight="@+id/Bbookticket"
+        android:layout_alignEnd="@+id/Bbookticket" />
+
+    <Button
+        android:text="My Profile"
+        android:background="#FFAB00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bprofile"
+        android:onClick="onClickProfileButton"
+        android:layout_marginRight="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="BOOK TICKET"
+        android:background="#FFAB00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bbookticket"
+        android:onClick="onClickButton"
+        android:layout_marginBottom="66dp"
+        android:layout_above="@+id/Bbalance"
+        android:layout_alignRight="@+id/Bprofile"
+        android:layout_alignEnd="@+id/Bprofile"
+        android:layout_alignLeft="@+id/TVusername"
+        android:layout_alignStart="@+id/TVusername" />
+
+    <Button
+        android:text="LOG OUT"
+        android:background="#FFAB00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Blogout"
+        android:onClick="clickExit"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/Bbalance"
+        android:layout_alignLeft="@+id/Bbalance"
+        android:layout_alignStart="@+id/Bbalance"
+        android:layout_alignRight="@+id/Bbalance"
+        android:layout_alignEnd="@+id/Bbalance" />
+
+</RelativeLayout>
